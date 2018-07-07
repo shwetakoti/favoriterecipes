@@ -1,5 +1,12 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: Ek8AqdSj66t+cG6ucDkTvPN/uqMwLou7npceVxhgO8XFKZcT3LdONnN3wB+YvAP66L4CqrO0/Xhgea0sIh0IPEXbT+IGgTZXQIKMd0WTnl30NMHhX3C/af4nr8r++AarPz096Qv+nKgGAxotvJD7n1QBIAwO+KtWiU4xvCH+PgM1y7WTq8uw5l8yml1dohqmi2UCwBOKXtRjltMArK+PwxvKKtGEIRVObWfPYq/Pbpo63+XuV0uvVCs7rpE4JckZO4l746y018JdSUlv/SQF9miiDElDHEfpkavNjM4oxuQUt9S4xfOPqxNpfIRrdeuEBWGpErN31wQwi5R/E5AY2oEHzNQSZoUVSTTLtuHR3dxyrRJo9NQ8YjAG2k1p/f8cHHDqqh+N+aJ857XhRWDvxJYaw26uVkFx+Vz2dqICmg/uDOcu+M/Wl9Ki9zOLBgKNJFRoDF8EjxyZzHqF6vYv9ynDDEoO+ku4+2SMFYgyw54ZKeMtXHsivTo+HSZd1THvbXC+8iT+cdU5Ig62iwUlBjmq9fDxNCj0fU+OyuUCkEuEGVsUQ1+JnwYXPrsHxUIGnubVhfsYy5263qtACzEVyTM2MNfscroe3xR1BMrtYMtveETB6egfGZXPjojJwSfXchMbQtR4lXSvkEyL7YUrPKRcDPPjEnLUzQh6v6HUbUs=
+  app: fierce-lake-11597
+  on:
+    repo: shwetakoti/favoriterecipes
